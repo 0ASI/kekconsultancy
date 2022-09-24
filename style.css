@@ -53,15 +53,6 @@
 /* -----------------------------------
 	01. General CSS
 -------------------------------------*/
-.main {
-  img {
-    max-width: 100%;
-    height: auto;
-    content-visibility: hidden;
-    background-color: #eee;
-  }
-}
-
 html {
   scroll-behavior: smooth;
 }
@@ -77,6 +68,7 @@ body {
 img {
   max-width: 100%;
   height: auto;
+  content-visibility: auto;
 }
 p {
   margin: 0 0 26px;
