@@ -53,6 +53,15 @@
 /* -----------------------------------
 	01. General CSS
 -------------------------------------*/
+.main {
+  img {
+    max-width: 100%;
+    height: auto;
+    content-visibility: hidden;
+    background-color: #eee;
+  }
+}
+
 html {
   scroll-behavior: smooth;
 }
