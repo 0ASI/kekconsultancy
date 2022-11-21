@@ -1107,6 +1107,9 @@ blockquote p cite:before {
 .sec-title .desc.desc2 {
   color: #333333;
 }
+.desc3 {
+  color: #ffffff;
+}
 .sec-title .big-desc {
   font-size: 18px;
   line-height: 28px;
