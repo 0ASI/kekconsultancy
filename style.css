@@ -2114,7 +2114,6 @@ body .search-modal .close:hover {
 }
 .rs-banner.banner-main-home .content-wrap .btn-part {
   position: relative;
-  margin: 0px 160px 0px 0px;
 }
 .rs-banner.banner-main-home .content-wrap .btn-part li {
   display: inline-block;
@@ -2764,6 +2763,7 @@ body .search-modal .close:hover {
   left: 50%;
   transform: translate(-50%, -50%);
   position: absolute;
+  margin-top: 80px;
 }
 .rs-videos .overly-border a {
   position: absolute;
