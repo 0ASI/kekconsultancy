@@ -1450,20 +1450,13 @@ blockquote p cite:before {
   justify-content: flex-end;
 }
 .full-width-header .rs-header.header-style2 .menu-area .row-table .col-cell.header-logo {
-  display: unset;
-  flex: unset;
-  padding: 0 45px;
+  display: flex;
+  flex: 1;
 }
 .full-width-header .rs-header.header-style2 .menu-area .row-table .col-cell.menu-responsive-onepage {
   display: flex;
   flex: 1;
   justify-content: flex-start;
-}
-.full-width-header .rs-header.header-style2 .menu-area .main-menu .rs-menu ul.nav-menu li {
-  margin-right: 50px;
-}
-.full-width-header .rs-header.header-style2 .menu-area .rs-menu-area {
-  margin-right: 0;
 }
 .full-width-header .rs-header.header-style2 .menu-area .main-menu .rs-menu ul.nav-menu li a {
   color: #032e42;
