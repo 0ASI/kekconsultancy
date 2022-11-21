@@ -1359,7 +1359,7 @@ blockquote p cite:before {
 }
 .full-width-header .rs-header .expand-btn-inner ul .btn-quote {
   position: relative;
-  margin-left: 30px;
+  margin-right: 30px;
   line-height: 30px;
 }
 .full-width-header .rs-header .expand-btn-inner ul .btn-quote .quote-button {
@@ -1470,6 +1470,7 @@ blockquote p cite:before {
 }
 .full-width-header .rs-header.header-style2 .menu-area.sticky {
   animation: smoothScroll .5s forwards;
+  background: #fff;
 }
 .full-width-header .rs-header.header-style2 .menu-area.sticky .menu-one:before {
   display: none;
@@ -2100,6 +2101,7 @@ body .search-modal .close:hover {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  padding-bottom: 340px;
 }
 .rs-banner.banner-main-home .content-wrap {
   padding: 305px 0 75px;
