@@ -6,7 +6,7 @@ function validateName() {
 
             }
             else {
-              return true;
+              return false;
             }
             return true;
           }
