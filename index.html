@@ -578,26 +578,28 @@
 										<h2 class="title">
 											Free Consultation
 										</h2>
+										 <form  method="post" target="hidden_iframe" onsubmit="return validateForm(); ">
 									</div>
 		                            <div class="contact-wrap">
 		                                <div id="form-messages"></div>
-		                                <form id="contact-form" method="post" action="mailer.php">
+																		<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {window.location='https://kekconsultancy.com/thankyou.html';}"></iframe>
+		                                <form method="post" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSd-5Quvs5UIhZkUKdvWcDEx2yXK99BFt99hLEdrqfcbuOPRtg/formResponse" target="hidden_iframe" onsubmit="return validateForm(); ">
 		                                    <fieldset>
 		                                        <div class="row">
 		                                            <div class="col-lg-6 col-md-6 col-sm-6 mb-25">
-		                                                <input class="from-control" type="text" id="name" name="name" placeholder="Name" required="">
+		                                                <input class="from-control" pattern="[A-Za-z]{1,32}" id="name" name="name" placeholder="Name" title="no numbers or special characters" required name="entry.1176385517">
 		                                            </div>
 		                                            <div class="col-lg-6 col-md-6 col-sm-6 mb-25">
-		                                                <input class="from-control" type="text" id="email" name="email" placeholder="E-Mail" required="">
+		                                                <input class="from-control" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" id="email" name="email" placeholder="E-Mail" title="''Example''@''Example''.''Example''" required name="entry.1022208948">
 		                                            </div>
 		                                            <div class="col-lg-6 col-md-6 col-sm-6 mb-25">
-		                                                <input class="from-control" type="text" id="phone" name="phone" placeholder="Phone Number" required="">
+		                                                <input class="from-control" pattern="^(00201|\+201|01)[0-2,5]{1}[0-9]{8}$" id="phone" name="phone" placeholder="Phone Number" title="Egyptian phone numbers only" required name="entry.1904585882">
 		                                            </div>
 		                                            <div class="col-lg-6 col-md-6 col-sm-6 mb-25">
-		                                                <input class="from-control" type="text" id="subject" name="subject" placeholder="Subject" required="">
+		                                                <input class="from-control" type="text" id="subject" name="subject" placeholder="Subject" required name="entry.497454506">
 		                                            </div>
 		                                            <div class="col-lg-12 mb-30">
-		                                                <textarea class="from-control" id="message" name="message" placeholder="Message" required=""></textarea>
+		                                                <textarea class="from-control" id="message" name="message" placeholder="Message" required name="entry.1534707455"></textarea>
 		                                            </div>
 		                                        </div>
 		                                        <div class="btn-part">
@@ -610,6 +612,7 @@
 		                            </div>
 		                        </div>
 							</div>
+
 							<!-- Contact End -->
 						</div>
 					</div>
@@ -731,7 +734,7 @@
 		<!-- magnific popup js -->
 		<script src="assets/js/jquery.magnific-popup.min.js"></script>
 		<!-- contact form js -->
-		<script src="assets/js/contact.form.js"></script>
+		<script src="assets/js/consultation.form.js">var submitted=false;</script>
 		<!-- main js -->
 		<script src="assets/js/main.js"></script>
 		<script src="assets/js/aos.js"></script>
