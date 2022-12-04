@@ -37,7 +37,7 @@ function validateName() {
 
 			}
 
-			if(!email.match(/^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$/)) {
+			if(!email.match(/^[A-Za-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$/)) {
 				alert("Please enter a correct email address") ;//Validation Message
 				return false;
 
@@ -47,9 +47,47 @@ function validateName() {
 
 		}
 
+		function validateSubject () {
+
+		 var subject = document.getElementById('subject').value;
+		 if(subject.length == 0) {
+			 alert("Subject can't be blank") ;//Validation Message
+			 return false;
+
+		 }
+
+		 if(!subject.match(/^[A-Za-z0-9\s]{2,20}$/)) {
+			 alert("Subject max letters are 20 with no special characters") ;//Validation Message
+			 return false;
+
+		 }
+
+		 return true;
+
+	 }
+
+	 function validateMessage () {
+
+		var message = document.getElementById('message').value;
+		if(message.length == 0) {
+			alert("Message can't be blank") ;//Validation Message
+			return false;
+
+		}
+
+		if(message.match(/(http|www|html|.ru|.com|.net|href|.ga)/)) {
+			alert("Please enter a correct message with no url") ;//Validation Message
+			return false;
+
+		}
+
+		return true;
+
+	}
+
 
 		function validateForm() {
-			if (!validateName() || !validatePhone() || !validateEmail()) {
+			if (!validateName() || !validatePhone() || !validateEmail() || !validateSubject () || !validateMessage ()) {
 
 				alert("Form not submitted");//Validation Message
 				return false;
