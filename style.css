@@ -2032,6 +2032,10 @@ body .search-modal .close:hover {
 /* ------------------------------------
 	07. Breadcrumbs Section CSS
 ---------------------------------------*/
+.whiteTextOverride
+{
+ color: white !important;
+}
 .rs-breadcrumbs {
   background-repeat: no-repeat !important;
   background-size: cover !important;
